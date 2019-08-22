@@ -1,1 +1,9 @@
-
+<div class="box" *ngIf="hero">
+  <h3>{{ hero.name|uppercase }} Details </h3>
+  <div class="table"><span>id: </span>{{ hero.id }}</div>
+  <!--<div><span>name: </span>{{ hero.name }}</div>-->
+  <div class="table">
+    <label for="name">Name:</label>
+    <input [(ngModel)]="hero.name" type="text" placeholder="{{hero.name}}">
+  </div>
+</div>
