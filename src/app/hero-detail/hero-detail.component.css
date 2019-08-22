@@ -1,0 +1,27 @@
+.box {
+  margin: 2em 0;
+  padding: 1em 0.4em;
+  border: 0.1em solid #589;
+  box-shadow: 0.5em 0.5em 30px #789,
+              -0.5em 0.5em 15px #789,
+              0.5em -0.5em 30px #789,
+              -0.5em -0.5em 15px #789;
+}
+
+.box h3,div {
+  margin: 0.5em 0;
+}
+
+.table {
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr;
+  grid-template-areas: 'label value';
+}
+
+.label {
+  grid-area: label;
+}
+
+.value {
+  grid-area: value;
+}
